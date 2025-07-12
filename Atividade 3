@@ -17,4 +17,12 @@ o preço unitário e a disponibilidade para
 a venda do determinado produto.
 
 questão 3 :
-A- 
+A- (nome_evento), (numero_participantes),
+(preco_ingresso), e (presencial) .
+B- (nome_evento): Uma string para armazenar o nome do evento.
+(numero_participantes): Um inteiro para armazenar
+o número estimado de participantes.
+(preco_ingresso): Um número decimal (ponto flutuante)
+para armazenar o preço do ingresso.
+(presencial): Um booleano (verdadeiro/falso)
+para indicar se o evento é presencial.
