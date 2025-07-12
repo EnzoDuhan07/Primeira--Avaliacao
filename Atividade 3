@@ -1,9 +1,20 @@
 questão 1 :
-a- Para o cadastro de alunos,
+A- Para o cadastro de alunos,
 as seguintes variáveis e tipos
 de dados podem ser criados:
-nome (string), idade (inteiro),
-altura (float) e matriculado (booleano).
+(string), (inteiro), (float) e (booleano).
+B- O nome, a idade, a altura e a matrícula
+do usuário.
 
 questão 2 :
-b-
+A- Para registrar informações de um produto,
+as seguintes variáveis são necessárias:
+(string), (inteiro),
+(decimal/ponto flutuante)
+e (booleano).
+B- O nome do produto, a quantidade em estoque,
+o preço unitário e a disponibilidade para
+a venda do determinado produto.
+
+questão 3 :
+A- 
