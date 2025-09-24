@@ -52,3 +52,14 @@ public class VerificacaoCompra {
 
 questão 3:
 
+public class DoacaoSangue {
+    public static void main(String[] args) {
+        int idade = 25; // Exemplo de idade
+        double peso = 65.0; // Exemplo de peso
+        final double PESO_MINIMO = 50.0;
+        
+        boolean aptoParaDoar = (idade >= 18) && (peso >= PESO_MINIMO);
+
+        System.out.println("Apto para doar: " + aptoParaDoar);
+    }
+}
