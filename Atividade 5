@@ -1,1 +1,28 @@
+questão 1:
 
+public class VerificacaoDesconto {
+    public static void main(String[] args) {
+        // Declarando as variáveis booleanas
+        boolean produtoComDesconto = true; // Exemplo: produto com desconto
+        boolean clienteTemCupom = false; // Exemplo: cliente sem cupom válido
+
+        // Determinando se o cliente pode utilizar o desconto
+        boolean podeUsarDesconto = produtoComDesconto || clienteTemCupom;
+
+        // Exibindo a mensagem no console
+        System.out.println("Desconto aplicado: " + podeUsarDesconto);
+    }
+}
+
+questão 2:
+
+public class AutorizacaoCompra {
+    public static void main(String[] args) {
+        boolean saldoSuficiente = true; // Defina como true ou false para testar
+        boolean contaVerificada = true; // Defina como true ou false para testar
+
+        boolean compraAutorizada = saldoSuficiente && contaVerificada;
+
+        System.out.println("Compra autorizada: " + compraAutorizada);
+    }
+}
