@@ -1,0 +1,54 @@
+questão 1:
+
+import java.util.Scanner;
+
+public class CalculoNotaFinal {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        final double MEDIA_APROVACAO = 7.0;
+
+        System.out.print("Digite a nota da primeira prova: ");
+        double nota1 = scanner.nextDouble();
+
+        System.out.print("Digite a nota da segunda prova: ");
+        double nota2 = scanner.nextDouble();
+
+        double media = (nota1 + nota2) / 2;
+
+        if (media >= MEDIA_APROVACAO) {
+            System.out.println("Aprovado: true");
+        } else {
+            System.out.println("Aprovado: false");
+        }
+
+        scanner.close();
+    }
+}
+
+questão 2:
+
+public class VerificacaoCompra {
+    public static void main(String[] args) {
+        // Declaração das variáveis
+        double precoProduto = 100.0; // Exemplo de preço do produto
+        double valorDisponivelCliente = 95.0; // Exemplo de valor disponível do cliente
+
+        // Declaração da constante
+        final double TAXA_DESCONTO = 0.10;
+
+        // Cálculo do preço final com desconto
+        double valorDesconto = precoProduto * TAXA_DESCONTO;
+        double precoFinalComDesconto = precoProduto - valorDesconto;
+
+        // Verificação da compra e exibição da mensagem
+        if (valorDisponivelCliente >= precoFinalComDesconto) {
+            System.out.println("Compra permitida: true");
+        } else {
+            System.out.println("Compra permitida: false");
+        }
+    }
+}
+
+questão 3:
+
