@@ -1,0 +1,24 @@
+public class ExemploWrapper {
+    public static void main(String[] args) {
+        String num1Str = "123";
+        String num2Str = "45.67";
+        char charTeste = 'A';
+
+        // Usando Integer.parseInt()
+        int numeroInteiro = Integer.parseInt(num1Str);
+        System.out.println("Número inteiro convertido: " + numeroInteiro);
+
+        // Usando Double.parseDouble()
+        double numeroDouble = Double.parseDouble(num2Str);
+        System.out.println("Número double convertido: " + numeroDouble);
+
+        // Usando Character.isDigit()
+        boolean ehDigito = Character.isDigit(charTeste);
+        System.out.println("O caractere '" + charTeste + "' é um dígito? " + ehDigito);
+
+        // Exemplo adicional com String.toUpperCase()
+        String textoOriginal = "ola mundo";
+        String textoMaiusculo = textoOriginal.toUpperCase();
+        System.out.println("Texto em maiúsculas: " + textoMaiusculo);
+    }
+}
