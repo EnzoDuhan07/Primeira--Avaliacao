@@ -1,1 +1,65 @@
 questão 1:
+
+import java.util.Scanner;
+
+public class CalculoMediasEscolares {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Array para armazenar as 8 notas anuais
+        double[] notas = new double[8];
+
+        // Receber as 8 notas anuais
+        for (int i = 0; i < 8; i++) {
+            System.out.print("Digite a nota " + (i + 1) + ": ");
+            notas[i] = scanner.nextDouble();
+        }
+
+        // Calcular as médias bimestrais
+        double media1Bimestre = (notas[0] + notas[1]) / 2;
+        double media2Bimestre = (notas[2] + notas[3]) / 2;
+        double media3Bimestre = (notas[4] + notas[5]) / 2;
+        double media4Bimestre = (notas[6] + notas[7]) / 2;
+
+        // Calcular as médias semestrais
+        double media1Semestre = (media1Bimestre + media2Bimestre) / 2;
+        double media2Semestre = (media3Bimestre + media4Bimestre) / 2;
+
+        // Calcular a média final
+        double mediaFinal = (media1Semestre + media2Semestre) / 2;
+
+        // Apresentar os resultados
+        System.out.println("\n--- Resultados ---");
+        System.out.printf("1º Bimestre: %.1f\n", media1Bimestre);
+        System.out.printf("2º Bimestre: %.1f\n", media2Bimestre);
+        System.out.printf("1º Semestre: %.1f\n", media1Semestre);
+        System.out.printf("3º Bimestre: %.1f\n", media3Bimestre);
+        System.out.printf("4º Bimestre: %.1f\n", media4Bimestre);
+        System.out.printf("2º Semestre: %.1f\n", media2Semestre);
+        System.out.printf("Média Final: %.1f\n", mediaFinal);
+
+        scanner.close();
+    }
+}
+
+questão 2:
+
+import java.util.Scanner;
+
+public class ConversorTemperaturas {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite a temperatura em graus Celsius (°C): ");
+        double celsius = scanner.nextDouble();
+
+        double fahrenheit = (celsius * 9/5) + 32;
+        double kelvin = celsius + 273.15;
+
+        System.out.printf("Temperatura em Celsius: %.1f °C%n", celsius);
+        System.out.printf("Temperatura em Fahrenheit: %.1f °F%n", fahrenheit);
+        System.out.printf("Temperatura em Kelvin: %.2f K%n", kelvin);
+
+        scanner.close();
+    }
+}
